@@ -12,6 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
+  httpOnly: true,
   origin: ['http://localhost:5173', 'https://relish-frontend-zeta.vercel.app', 'https://relish-frontend-aasim-qureshis-projects.vercel.app', 'https://relish-frontend-git-main-aasim-qureshis-projects.vercel.app'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
