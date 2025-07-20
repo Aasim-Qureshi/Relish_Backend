@@ -93,6 +93,7 @@ const RecipeController = {
 
   generate: catchAsync(async (req, res) => {
     const { ingredients } = req.body;
+    console.log("Ingredients:", ingredients);
     const userId = req.userId;
     const recipe = await GenerateRecipeUC.execute({ ingredients, userId });
 

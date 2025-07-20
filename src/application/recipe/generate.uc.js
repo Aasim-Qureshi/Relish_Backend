@@ -17,7 +17,7 @@ const GenerateUC = {
 
     const recipeData = {
       title: generated.title,
-      ingredients: generated.ingredients,
+      ingredients: cleanedIngredients,
       instructions: generated.instructions,
       imageUrl: "https://c.files.bbci.co.uk/AB75/production/_122239834_moleyrobotics2.jpg",
     };
